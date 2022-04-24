@@ -62,7 +62,7 @@ body{
 .wavy span{
     position: relative;
     display: inline-block;
-    color: rgb(12, 4, 12);
+    color: #FFFFFF;
     font-family: 'Fredoka One', cursive;
     font-size: 2em;
     animation: animate 3s ease-in-out infinite;   
