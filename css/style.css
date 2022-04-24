@@ -271,7 +271,7 @@ body{
     }
     .wavy{
         
-        margin-top: 5%;
+        margin-top: 6%;
     }
 
 
@@ -280,7 +280,7 @@ body{
 @media (max-width: 375px){
     .wavy{
         
-        margin-top: 5%;
+        margin-top: 9%;
     }
 
 }
