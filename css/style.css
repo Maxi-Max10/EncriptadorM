@@ -233,29 +233,27 @@ body{
 }
 @media (max-width: 421px) {
     .button-left{
-        position: absolute;
+        
         margin-top: 130%;
-        margin-left: 9%;
+        
     }
 
     #btn-encriptar{          
-        height: 60%;
-        margin-left: 1%;
+        
         width: 92%;
     }
     #btn-desencriptar{
-        height: 60%;
-        margin-left: 1%;
+        
         margin-top: 5%;
         width: 92%;
     }
 
     .right{
-        position: absolute;
+        
         margin-top: 176%;
-        margin-left: 12%;
+        
         height: 20%;
-        width: 60%;
+        
 
     }
 
@@ -271,16 +269,12 @@ body{
     }
     .wavy{
         
-        margin-top: 6%;
+        margin-top: 7%;
     }
 
 
     
 }
-@media (max-width: 375px){
-    .wavy{
-        
-        margin-top: 9%;
-    }
+
 
 }
