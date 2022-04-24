@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(135deg,#00b7d4, #505488, #2F3F80,#161569,#5A4894,#A950A1,#FF7CAE);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+}
+@keyframes fanimado {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+    height: 680px;
+    background-color: rgba(0, 0, 255, 0);
+}
+
+.logo{
+    width: 100%;
+    float: left;
+   
+
+}
+
+.logo-img{
+   width: 100px;
+   margin-top: 1%;
+   margin-left: -3%;
+   float: inherit;
+}
+
+.title{
+    float: inherit;
+    margin-left: 0%;
+    font-size: 32px;
+    font-family: 'Fredoka One', cursive;
+    
+}
+.wavy{
+    position: relative;
+    margin-top: 3%;
+   
+    
+}
+.wavy span{
+    position: relative;
+    display: inline-block;
+    color: rgb(12, 4, 12);
+    font-family: 'Fredoka One', cursive;
+    font-size: 2em;
+    animation: animate 3s ease-in-out infinite;   
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+.warning{
+    font-size: 12px;
+    font-family: 'Inter'; 
+    margin-left: 10%; 
+    color: #818181;
+
+}
+
+.left{
+    float:left;
+    width: 70%;
+    height: 70%;
+    border-radius: 24px;
+}
+
+.right{
+    float: right;
+    width: 30%;
+    height: auto;
+    border-radius: 24px;
+    background: #f7f7f7;
+
+}
+
+.button-left{
+    float: left;
+    width: 70%;
+    height: auto;
+    border-radius: 24px;
+    
+}
+
+.text-input{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 60%;
+    color: #f9fafb;
+    
+    font-size: 20px;
+    border: none;
+    resize: none;
+    outline: none; /* recuadro no aparece cuando hago clic*/
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+#img-right{
+    margin-left: 5%;
+    margin-top: 20%;
+    width: 90%;
+    height: auto;
+
+}
+#text{
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 5%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#text-two{
+    float: left;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 5%;
+    color: #2b455f;
+    width: 80%;
+    height: 60%;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 12px;
+    background: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#btn-encriptar{    
+    padding: 15px;
+    height: 60%;
+    width: 35%;
+    border-radius: 20px;
+    margin-left: 15%;
+    background-color: #0A3871;
+    border-color: #0A3871;
+    color: #D8DFE8;
+    
+}
+#btn-desencriptar{
+    padding: 15px;
+    height: 60%;
+    width: 35%;
+    border-radius: 20px;
+    margin-left: 5%;
+    background-color: #ffffff;
+    border-color: #0A3871;
+    color:#0A3871;
+
+}
+
+#copy{
+    margin-left: 33%;
+    margin-top: 90%;
+    padding: 8px;
+    width: 30%;
+    height: 10%;
+    background: #D8DFE8;
+    border-radius: 24px;
+    display: none;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .button-left{
+        position: absolute;
+        margin-top: 90%;
+        margin-left: 9%;
+    }
+    
+
+    #btn-encriptar{          
+        height: 60%;
+        margin-left: 1%;
+        width: 46%;
+    }
+    #btn-desencriptar{
+        height: 60%;
+        margin-left: 1%;
+        width: 46%;
+    }
+
+    .right{
+        position: absolute;
+        margin-top: 112%;
+        margin-left: 12%;
+        width: 60%;
+            
+    
+    }
+   
+    
+    #img-right{
+        display: none;
+    }
+}
+@media (max-width: 421px) {
+    .button-left{
+        position: absolute;
+        margin-top: 130%;
+        margin-left: 9%;
+    }
+
+    #btn-encriptar{          
+        height: 60%;
+        margin-left: 1%;
+        width: 92%;
+    }
+    #btn-desencriptar{
+        height: 60%;
+        margin-left: 1%;
+        margin-top: 5%;
+        width: 92%;
+    }
+
+    .right{
+        position: absolute;
+        margin-top: 176%;
+        margin-left: 12%;
+        height: 20%;
+        width: 60%;
+
+    }
+
+    #copy{
+       
+        height: 20%;
+
+    }
+
+    .text-input{
+        margin-left: 10%;
+
+    }
+    .wavy{
+        
+        margin-top: 5%;
+    }
+
+
+    
+}
+@media (max-width: 375px){
+    .wavy{
+        
+        margin-top: 5%;
+    }
+
+}

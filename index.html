@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Encriptador M</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <!-- <img class="logo-img" src="img/logo.png"> -->
+           <div class="wavy">
+
+           
+               <span style="--i:1;">E</span>
+               <span style="--i:2;">N</span>
+               <span style="--i:3;">C</span>
+               <span style="--i:4;">R</span>
+               <span style="--i:5;">I</span>
+               <span style="--i:6;">P</span>
+               <span style="--i:7;">T</span>
+               <span style="--i:8;">A</span>
+               <span style="--i:9;">D</span>
+               <span style="--i:10;">O</span>
+               <span style="--i:11;">R</span>
+            </div>
+
+        </div>
+        <div class="left">
+            <textarea class="text-input" id="input-mensaje" type="text" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+        <div class="right">
+            <img src="img/muñeco.png" id="img-right" >
+            <h1 id="text">Ningún mensaje fue encontrado</h1>
+            <textarea id="text-two" name="name" cols="100" rows="15">Ingrese el texto que desees encriptar o desencriptar</textarea>
+            <button id="copy" type="button" name="button" onclick="copiar()">Copiar</button>
+        </div>
+        <div class="button-left">
+            <p class="warning">Solo letras minúsculas y sin acentos</p>
+            <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+            <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+
+    </div>   
+</body>
+</html>
